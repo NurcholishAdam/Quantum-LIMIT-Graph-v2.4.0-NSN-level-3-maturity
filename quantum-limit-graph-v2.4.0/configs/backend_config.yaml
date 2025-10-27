@@ -1,0 +1,69 @@
+# Quantum LIMIT-GRAPH v2.4.0 Backend Configuration
+
+# Backend Definitions
+backends:
+  russian:
+    name: "Russian Quantum Compiler"
+    type: "quantum_compiler"
+    base_fidelity: 0.92
+    base_latency_ms: 85
+    t1_time_us: 100
+    t2_time_us: 150
+    cyrillic_boost: 0.05
+    supported_languages:
+      - ru
+      - en
+      - uk
+      - be
+    domain_strengths:
+      scientific: 0.03
+      math: 0.02
+      physics: 0.04
+    
+  ibm:
+    name: "IBM Quantum"
+    type: "quantum_hardware"
+    base_fidelity: 0.94
+    base_latency_ms: 92
+    t1_time_us: 120
+    t2_time_us: 180
+    cyrillic_boost: 0.0
+    supported_languages:
+      - en
+      - es
+      - fr
+      - de
+      - zh
+    domain_strengths:
+      code: 0.03
+      text: 0.02
+      engineering: 0.03
+
+# Comparison Settings
+comparison:
+  default_backends:
+    - russian
+    - ibm
+  
+  default_languages:
+    - en
+    - ru
+    - es
+    - fr
+    - de
+    - zh
+    - ar
+  
+  default_domains:
+    - code
+    - math
+    - text
+    - scientific
+    - legal
+    - medical
+  
+  metrics:
+    - edit_success_rate
+    - hallucination_rate
+    - correction_efficiency
+    
