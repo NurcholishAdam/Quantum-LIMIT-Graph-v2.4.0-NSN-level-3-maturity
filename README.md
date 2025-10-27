@@ -176,5 +176,5 @@ Built on top of:
 ---
 
 **Version**: 2.4.0  
-**Release Date**: October 15, 2025  
+**Release Date**: October 27, 2025  
 **Status**: ✅ Production Ready
