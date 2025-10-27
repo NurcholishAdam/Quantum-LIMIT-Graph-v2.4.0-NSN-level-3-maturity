@@ -123,13 +123,6 @@ python src/visualization/edit_trace_visualizer.py
 3. **Visualization**: Create new performance dashboards
 4. **Multilingual**: Add support for new languages
 
-**Prizes**:
-- 🥇 Gold: Featured on leaderboard + HF Space showcase
-- 🥈 Silver: Contributor badge + Documentation credit
-- 🥉 Bronze: GitHub recognition
-
-**Submission**: PR with benchmarks, tests, and documentation
-
 ## 📁 Repository Structure
 
 ```
